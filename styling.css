@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 800px;
+    margin: 80px auto;
+    border: 5px solid black;
+    /* text-align: center; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: grid;
+    grid-template-areas: "head head"
+                            "game aside"
+                            "game nave"
+                            "foot foot";
+    grid-template-columns: 1.5fr 0.9fr;
+    grid-template-rows: 1.2fr 1.5fr 1.5fr 1fr;
+}
+
+.container header{
+    grid-area: head;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container aside{
+    grid-area: aside;
+    padding: 20px;
+    background-color: chartreuse;
+
+display: flex;
+justify-content: center;
+align-items: center;} 
+
+.container nav{
+    grid-area: nave;
+    padding: 20px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container main{
+    grid-area: game;
+    padding: 20px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container footer{
+    grid-area: foot;
+    padding: 20px;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
