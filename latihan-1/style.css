@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{background-color: rgb(211, 202, 202);}
+
+.container{
+    width: 70%;
+    margin: 80px auto;
+    /* border: 5px solid black; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1fr 1.5fr;
+    grid-template-rows: 25px 15px 50px;
+    grid-auto-flow: column;
+    /* grid-auto-rows: 100px; */
+    grid-auto-columns: 100px;
+    
+}
+
+.container .items:nth-child(odd){
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .items:nth-child(even){
+    background-color: rgb(102, 200, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+
+
+
