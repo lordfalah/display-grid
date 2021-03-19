@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 800px;
+    margin: 80px auto;
+    border: 5px solid black;
+    display: grid;
+    grid-template-areas: "pala pala pala pala pala pala "
+                            "edit play play play kanan kanan"
+                            "edit foot foot foot foot foot";
+   grid-template-columns: 0.3fr 0.5fr ;
+   grid-template-rows: 1.7fr 1.4fr 0.9fr;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   font-size: 29px;
+   box-sizing: border-box;
+   
+}
+
+.container header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: pala;
+    padding: 20px;
+    background-color: cadetblue;
+}
+
+.container menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: edit;
+    padding: 20px;
+    background-color: chartreuse;
+
+}
+
+.container main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: play;
+    padding: 20px;
+    background-color: brown;
+
+}
+
+.container nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: kanan;
+    padding: 20px;
+    background-color: cyan;
+
+}
+
+.container footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: foot;
+    padding: 20px;
+    background-color: darkslateblue;
+
+}
+
+
+
+
+
+
+
