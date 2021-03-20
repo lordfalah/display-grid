@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color: rgb(207, 207, 207);}
+
+.container{
+    margin: 80px auto;
+    text-align: center;
+    width: 80%;
+    border: 5px solid black;
+    display: grid;
+    /* grid-template-columns: 1fr max-content 1fr; */
+    grid-template-columns: 1fr min-content 1fr;
+    /* grid-template-rows: repeat(3, 40px); */
+    
+}
+
+.container .items:nth-child(odd){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.container .items:nth-child(even){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+

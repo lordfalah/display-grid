@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color: rgb(207, 207, 207);}
+
+.container{
+    margin: 80px auto;
+    text-align: center;
+    width: 80%;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr)
+                            repeat(5, 5fr);
+    grid-template-rows: 50px;
+  
+    
+}
+
+.container .items:nth-child(odd){
+    background-color: cadetblue;
+}
+
+.container .items:nth-child(even){
+    background-color: coral;
+}
+
+
+
+
+
+
+
