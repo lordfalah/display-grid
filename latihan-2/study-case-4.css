@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{background-color: rgb(218, 218, 218);}
+
+
+
+.container .galery{
+    width: 80%;
+    margin: 80px auto;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+}
+
+
+.container .galery li{
+    list-style: none;
+}
+
+
+.container .galery li img{
+    width: 100%;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+

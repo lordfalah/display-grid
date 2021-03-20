@@ -12,7 +12,8 @@ body{background-color: rgb(207, 207, 207);}
     border: 5px solid black;
     display: grid;
     /* grid-template-columns: repeat(auto-fit, 100px); */
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: repeat(auto-fit, 50px 30px 40px 60px) ;
     
 }
 
