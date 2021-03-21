@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color: rgb(214, 214, 214);}
+
+.container{
+    margin: 80px auto;
+    width: 80%;
+    border: 5px solid black;
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    grid-template-areas: 
+                        "head head head head"
+                        "side cont cont cont"
+                        "side foot foot foot"
+                        "kaki kaki kaki kaki"
+    ;
+    grid-template-rows: repeat(auto-fit, 90px);
+}
+
+.container .header{
+    background-color: brown;
+    padding: 4%;
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .sidebar{
+    padding: 5%;
+    background-color: burlywood;
+    grid-area: side;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content{
+    padding: 5%;
+    background-color: coral;
+    grid-area: cont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .foot{
+    padding: 5%;
+    background-color: darkgray;
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container footer{
+    padding: 3.5%;
+    background-color: deeppink;
+    grid-area: kaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 576px){
+    .container{
+        grid-template-areas: 
+                            "head head head head"
+                            "side side side side"
+                            "cont cont cont cont"
+                            "foot foot foot foot"
+                            "kaki kaki kaki kaki"
+        ;
+    }
+}
