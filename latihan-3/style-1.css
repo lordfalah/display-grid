@@ -19,6 +19,7 @@ body{background-color: rgb(214, 214, 214);}
                         "kaki kaki kaki kaki"
     ;
     grid-template-rows: repeat(auto-fit, 90px);
+
 }
 
 .container .header{
@@ -26,9 +27,7 @@ body{background-color: rgb(214, 214, 214);}
     padding: 4%;
     box-sizing: border-box;
     grid-area: head;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .container .sidebar{
@@ -36,9 +35,7 @@ body{background-color: rgb(214, 214, 214);}
     box-sizing: border-box;
     background-color: burlywood;
     grid-area: side;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .container .content{
@@ -46,9 +43,7 @@ body{background-color: rgb(214, 214, 214);}
     box-sizing: border-box;
     background-color: coral;
     grid-area: cont;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .container .foot{
@@ -56,9 +51,7 @@ body{background-color: rgb(214, 214, 214);}
     box-sizing: border-box;
     background-color: darkgray;
     grid-area: foot;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .container footer{
@@ -66,9 +59,7 @@ body{background-color: rgb(214, 214, 214);}
     box-sizing: border-box;
     background-color: deeppink;
     grid-area: kaki;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 
