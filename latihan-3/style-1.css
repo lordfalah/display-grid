@@ -11,7 +11,7 @@ body{background-color: rgb(214, 214, 214);}
     border: 5px solid black;
     /* text-align: center; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
     grid-template-areas: 
                         "head head head head"
                         "side cont cont cont"
@@ -24,6 +24,7 @@ body{background-color: rgb(214, 214, 214);}
 .container .header{
     background-color: brown;
     padding: 4%;
+    box-sizing: border-box;
     grid-area: head;
     display: flex;
     justify-content: center;
@@ -32,6 +33,7 @@ body{background-color: rgb(214, 214, 214);}
 
 .container .sidebar{
     padding: 5%;
+    box-sizing: border-box;
     background-color: burlywood;
     grid-area: side;
     display: flex;
@@ -41,6 +43,7 @@ body{background-color: rgb(214, 214, 214);}
 
 .container .content{
     padding: 5%;
+    box-sizing: border-box;
     background-color: coral;
     grid-area: cont;
     display: flex;
@@ -50,6 +53,7 @@ body{background-color: rgb(214, 214, 214);}
 
 .container .foot{
     padding: 5%;
+    box-sizing: border-box;
     background-color: darkgray;
     grid-area: foot;
     display: flex;
@@ -59,6 +63,7 @@ body{background-color: rgb(214, 214, 214);}
 
 .container footer{
     padding: 3.5%;
+    box-sizing: border-box;
     background-color: deeppink;
     grid-area: kaki;
     display: flex;
