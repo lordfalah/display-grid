@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color: rgb(216, 216, 216);}
+
+.container{
+    margin: 80px auto;
+    width: 80%;
+    border: 5px solid black;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+                        "cad cad cad"
+                        "reu reu cho"
+                        "reu reu yan "
+                        ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    align-content: space-between;
+}
+
+.container .item{
+    /* height: 100px; */
+}
+
+.container .sa{
+    grid-area: cad;
+    background-color: cadetblue;
+}
+
+.container .du{
+    grid-area: reu;
+    background-color: chartreuse;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.container .ti{
+    grid-area: cho;
+    background-color: chocolate;
+}
+
+.container .pat{
+    grid-area: yan;
+    background-color: cyan;
+}
+
