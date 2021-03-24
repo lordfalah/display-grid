@@ -8,9 +8,11 @@ body{background-color: rgb(216, 216, 216);}
 .container{
     margin: 80px auto;
     width: 80%;
+    /* height: 500px; */
     border: 5px solid black;
     text-align: center;
     display: grid;
+    /* gap: 5px; */
     grid-template-areas: 
                         "cad cad cad"
                         "reu reu cho"
@@ -24,6 +26,10 @@ body{background-color: rgb(216, 216, 216);}
 
 .container .item{
     /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container .sa{
