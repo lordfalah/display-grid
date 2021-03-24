@@ -8,6 +8,7 @@ body{background-color: rgb(216, 216, 216);}
 .container{
     margin: 80px auto;
     width: 80%;
+
     border: 5px solid black;
     text-align: center;
     display: grid;
