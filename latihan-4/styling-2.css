@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{background-color: rgb(214, 214, 214);}
+
+.container{
+    width: 80%;
+    /* height: 500px; */
+    border: black 5px solid;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas: 
+                        "bur bur bur bur"
+                        "cad cad cad cho"
+                        "cad cad cad cya";
+}
+
+.container .item{
+    /* width: 75%; */
+    /* height: 70%; */
+}
+
+.container .sa{
+    grid-area: bur;
+    background-color: burlywood;
+}
+
+.container .du{
+    grid-area: cad;
+    background-color: cadetblue;
+}
+
+.container .ti{
+    grid-area: cho;
+    background-color: chocolate;
+}
+
+.container .pat{
+    grid-area: cya;
+    background-color: cyan;
+}
+
+
+
+
+
+
+
+

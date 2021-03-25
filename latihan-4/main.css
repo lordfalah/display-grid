@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Head */
+
+nav{
+    display: flex;
+    background-color: cyan;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav .logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav .link{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+nav .link li{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    display: inline-block;
+}
+
+nav .link li a:hover{
+    /* font-weight: bold; */
+    /* font-size: 25px; */
+    transition: 0.80s ease;
+    width: 50%;
+    height: 50%;
+    color: rgba(255, 80, 27, 0.945);
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    border-radius: 20%;
+    margin: 6px;
+    background-color: white;
+}
+
+/* Head End*/
+
+/* Section1 */
+
+.container{
+    margin-top: 1200px;
+}
+
+/* End Section one */
+
+
+
+
+
+
+/* Ukuran Tablet */
+
+@media screen and (max-width: 767px){
+    nav .link{
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+
+    }
+
+}
+
+
+/* Ukuran for Mobile */
+@media screen and (max-width: 564px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .link{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        background-color: cyan;
+        top: 8vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        width: 50%;
+        /* height: 50%; */
+        transform: translateX(100%);
+        transition: 0.90s ease-in;
+        
+    }
+
+    nav .link li{
+        opacity: 0;
+        display: inline-block;
+        /* width: 100px; */
+        height: 1000px;
+        margin-top: 50px;
+        transform: translateX(50px);
+  
+    }
+
+    .burger{
+        display: block;
+    }
+
+
+}
+
+
+.burger-active{
+    transform: translateX(0);
+        
+}
+
+/* For if */
+@keyframes linkFade{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+        z-index: 5;
+    }
+}
+
+
+/* For else */
+@keyframes hideFade{
+    0%{
+        opacity: 1;
+        transform: translateX(-80px);
+    }
+
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(0px);
+        /* animation: alternate; *
+        /
+    }
+}
+
+
+
+
+.text-slide{
+    opacity: 1;
+    transform: translateX(0px);
+}
