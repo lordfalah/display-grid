@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{background-color: rgb(233, 231, 227);}
+
+
+nav{
+    height: 60px;
+    background-color: cyan;
+    display: grid;
+    /* grid-template-columns: 100px; */
+    align-items: center;
+    padding-left: 40px; 
+    position: relative;
+
+}
+
+
+
+nav .linkNav{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(20px, 120px));
+    grid-template-rows: repeat(1, 50px);
+    justify-content: end;
+    align-items: center;
+    margin-top: -35px;
+    text-align: center;
+    width: 90%;
+
+}
+
+nav .linkNav li{
+    /* margin-left: -100px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    /* font-size: 16px; */
+}
+
+nav .linkNav li a:hover{
+    transition: 0.50s ease;
+    transform: scale(1.3);
+    color: salmon;
+    display: inline-block;
+}
+
+/* Burger Nav bar */
+
+.burger{
+    cursor: pointer;
+    display: none;
+}
+
+.burger span{
+    display: block;
+    width: 25px;
+    height: 4px;
+    border-radius: 20%;
+    margin: 6px;
+    background-color: white;
+    
+}
+
+/* Burger Nav bar END!!!*/
+
+
+
+
+
+/* Responsive For Mobile */
+
+@media screen and (max-width: 564px){
+    body{
+        overflow-x: hidden;
+    }
+
+    nav .linkNav{
+        grid-template-rows: repeat(5, 120px);
+        grid-template-columns: 50px;
+        background-color: cyan;
+        
+        justify-content:space-evenly;
+        position: absolute;
+        height: 92vh;
+        width: 40vh;
+        top: 13vh;
+        right: 0;
+        transform: translateX(280px);
+        transition: 0.90s ease;
+        
+    }
+
+    nav .linkNav.slideFade{
+
+        transform: translateX(0px);
+    }
+
+
+
+
+    .burger{
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        
+    }
+    
+}
+
+
+/* Responsive END Mobile */
+
+/* LinkSlide */
+
+@keyframes allLinkFade{
+    0%{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* LinkSlide END*/
+
+
