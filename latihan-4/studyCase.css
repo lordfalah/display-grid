@@ -5,8 +5,14 @@
     text-decoration: none;
 }
 
-body{background-color: rgb(233, 231, 227);}
+body{
+    background-color: rgb(233, 231, 227);
+    transition: 0.80s ease-in ;
+}
 
+body.warna{
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 nav{
     height: 60px;
@@ -90,7 +96,7 @@ nav .linkNav li a:hover{
         top: 13vh;
         right: 0;
         transform: translateX(280px);
-        transition: 0.90s ease;
+        transition: 0.90s ease-in;
         
     }
 
@@ -113,6 +119,9 @@ nav .linkNav li a:hover{
 }
 
 
+
+
+
 /* Responsive END Mobile */
 
 /* LinkSlide */
@@ -121,6 +130,17 @@ nav .linkNav li a:hover{
     0%{
         opacity: 0;
         transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes deleteFade{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
     }
     100%{
         opacity: 1;
