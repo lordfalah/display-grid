@@ -8,6 +8,7 @@
 body{
     background-color: rgb(233, 231, 227);
     transition: 0.80s ease-in ;
+    height: 2000px;
 }
 
 body.warna{
@@ -68,10 +69,109 @@ nav .linkNav li a:hover{
     border-radius: 20%;
     margin: 6px;
     background-color: white;
-    
+    transition: 0.50s ease-in-out;
 }
 
+/* Transtition Active Burger */
+
+.burger.try-1 span:first-child {
+    transform: rotate(45deg);
+    transform-origin: 2px 8px;
+    background-color: salmon;
+}
+
+.burger.try-2 span:nth-child(2){
+    transform: translateX(25px);
+    background-color: salmon;
+    opacity: 0;
+}
+
+.burger.try-3 span:last-child {
+    transform: rotate(-45deg);
+    transform-origin: -1px -4px;
+    background-color: salmon;
+} 
+
 /* Burger Nav bar END!!!*/
+
+
+/* Animation Scroll Window */
+
+@keyframes scrollFade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transition: 0.80s ease-in;
+    }
+}
+
+/* Animation Scroll Window END!!!!*/
+
+
+/* For All Teks */
+
+section.sectionOne{
+    margin-top: 1200px;
+}
+
+.sectionOne h2{
+    text-align: center;
+}
+
+.sectionOne .containerTeks{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1.2fr));
+    column-gap: 18px;
+    row-gap: 10px;
+}
+
+
+
+/* For All Teks END!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive For Tablet */
+
+@media screen and (max-width: 764px){
+    nav .linkNav{
+        grid-template-columns: repeat(5, 80px);
+        grid-template-rows: repeat(1, minmax(50px, 80px));
+    }
+
+}
+
+/* Responsive For Tablet */
+
+
+
+
+
 
 
 
@@ -92,7 +192,7 @@ nav .linkNav li a:hover{
         justify-content:space-evenly;
         position: absolute;
         height: 92vh;
-        width: 40vh;
+        width: 50%;
         top: 13vh;
         right: 0;
         transform: translateX(280px);

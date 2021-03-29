@@ -4,10 +4,15 @@ function slideShow(){
     const getAllLink = document.querySelectorAll("nav .linkNav li");
     const getBody = document.querySelector("body");
 
-    console.log(getBody);
+    
     getBurger.addEventListener("click", function(){
         // console.log(this)
         getLink.classList.toggle("slideFade");
+
+        // Effect Burger
+        getBurger.classList.toggle("try-1");
+        getBurger.classList.toggle("try-2");
+        getBurger.classList.toggle("try-3");
 
         getAllLink.forEach((link, index) =>{
             if(getLink.classList.contains("slideFade")){
@@ -29,6 +34,34 @@ function slideShow(){
 slideShow();
 
 
+// All Scroll
+function scrollWindow(){
+    const allLink = document.querySelectorAll("nav .linkNav .pageScroll");
+
+    window.addEventListener("scroll", function(){
+        const wScroll = this.pageYOffset;
+        console.log(wScroll);
+        allLink.forEach(link => {
+            link.addEventListener("click", function(){
+                const getHref = this.getAttribute("href");
+                const getParent = document.querySelector(`${getHref}`).offsetTop;
+                
+                link.style.animation = `scrollFade 0.80s ease 0.50s`;
+    
+    
+            })
+        })
+        
+    });
+
+    
+    
 
 
 
+
+}
+
+scrollWindow();
+
+// All Scroll End
